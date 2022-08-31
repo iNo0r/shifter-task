@@ -2,8 +2,6 @@ import { useMemo } from "react";
 import { useState } from "react";
 
 const NewShift = () => {
-  const [shifts, setShifts] = useState([]);
-
   const [shiftStart, setStart] = useState("");
   const [shiftEnd, setEnd] = useState("");
   const shiftMin = useMemo(() => {

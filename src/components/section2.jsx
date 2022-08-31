@@ -59,7 +59,6 @@ const Section2 = () => {
           className=" p-1 rounded  border-[1px] border-stone-300"
           type="datetime-local"
           value="2022-08-04T19:32"
-          disabled
         />
       </div>
     </div>
