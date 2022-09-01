@@ -1,11 +1,11 @@
-// import Section1 from "./components/section1.jsx";
-import Section2 from "./components/section2.jsx";
+// import Section1 from "./components/ModerShifter.jsx.jsx";
+import ClassicShifter from "./components/ClassicShifter.jsx";
 
 const App = () => {
   return (
     <div>
       {/* <Section1 /> */}
-      <Section2 />
+      <ClassicShifter />
     </div>
   );
 };
