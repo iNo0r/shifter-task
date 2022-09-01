@@ -1,6 +1,6 @@
 # Shifter
 
-**[Check it](https://shifter-6113e.web.app)**
+**[Press here to preview it live](https://shifter-6113e.web.app)**
 
 ### Technologies Used
 
