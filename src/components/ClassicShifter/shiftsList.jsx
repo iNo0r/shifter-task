@@ -13,18 +13,20 @@ const ShiftsList = ({ shiftsList }) => {
 
   return (
     <>
-      <div className="pn-shifts-list_header flex gap-x-2 text-yellow-700 mb-4">
-        <span className=" w-4 "># </span>
-        <div className=" flex justify-between w-full gap-x-2">
-          <span className=" w-full   "> Start: </span>
-          <span className=" w-full  "> End: </span>
-        </div>
-      </div>
       {shiftsList.length < 1 && (
         <>
           <h3 className=" text-lg text-stone-700 "> Welcome! </h3>
           <p className="text-sm text-stone-400"> No shifts to be displayed </p>
         </>
+      )}
+      {!(shiftsList.length < 1) && (
+        <div className="pn-shifts-list_header flex gap-x-2 text-yellow-700 mb-4">
+          <span className=" w-4 "># </span>
+          <div className=" flex justify-between w-full gap-x-2">
+            <span className=" w-full   "> Start: </span>
+            <span className=" w-full  "> End: </span>
+          </div>
+        </div>
       )}
       <div className="flex flex-col gap-y-2 mb-2">
         {shiftsList &&

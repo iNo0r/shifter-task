@@ -25,7 +25,7 @@ const ClassicShifter = () => {
     try {
       shiftValidater(shiftsList, shiftTimeStampObject);
     } catch (e) {
-      console.log(e);
+      // console.log(e);
       showErrowfor2s();
       setShifterErrow(e.message);
       return false;
@@ -44,7 +44,7 @@ const ClassicShifter = () => {
   function updateDataToStorage() {
     const dataStringified = JSON.stringify(shiftsList);
     localStorage.setItem("shiftsList", dataStringified);
-    console.log(localStorage.getItem("shiftsList"));
+    // console.log(localStorage.getItem("shiftsList"));
   }
   function loadDataFromStorage() {
     let dataParsed = JSON.parse(localStorage.getItem("shiftsList"));
